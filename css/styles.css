@@ -1,7 +1,37 @@
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* headings */
+.big-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+
 #title {
     background-color: #ff4c68;
     color: #fff;
-
 }
 
 .container-fluid {
@@ -9,18 +39,16 @@
 }
 
 /* navbar brand */
-
 .navbar-brand {
     font-family: 'Ubuntu', sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
-
 }
-
 
 .nav-item {
     margin: 0 18px;
 }
+
 .nav-link {
     font-size: 1.2rem;
 }
@@ -30,20 +58,10 @@
     padding: 0 0 4.5rem;
 }
 
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-
-    font-size: 3.5rem;
-    line-height: 1.5;
-}
-
 /* download button */
-
 .download-btn {
     margin: 3% 3% 30px;
 }
-
 
 /* iphone image */
 .iphone-img {
@@ -53,23 +71,12 @@ h1 {
     transform: rotate(25deg);
 }
 
-@media (max-width: 1028px) {
-    .iphone-img {
-        position: static;
-        transform: rotate(0);
-        margin: auto;
-    }
-    #title {
-        text-align: center;
-    }
-}
-
-
 /* feature icon */
 .feature-icon {
     color: #ef8172;
     margin-bottom: 3%;
 }
+
 .feature-icon:hover {
     color: #ff4c68;
 }
@@ -82,9 +89,7 @@ h1 {
     position: relative;
     z-index: 1;
 }
-
-h3 {
-    font-family: 'Montserrat', sans-serif;
+.feature-heading {
     font-size: 1.5rem;
 }
 
@@ -100,17 +105,14 @@ h3 {
     background-color: #ef8172;
     color: #fff;
 }
-.carousel-item {
-    padding: 7% 15%;
-
-}
-h2 {
-    font-family: 'Montserrat', sans-serif;
+.testimonial-text {
     font-size: 3rem;
     line-height: 1.5;
-
 }
 
+.carousel-item {
+    padding: 7% 15%;
+}
 
 .testimonial-img {
     width: 10%;
@@ -121,14 +123,14 @@ h2 {
 #press {
     background-color: #ef8172;
     text-align: center;
-
 }
+
 .press-logo {
     width: 15%;
     margin: 20px 20px 50px;
 }
 
-
+/* price */
 #pricing {
     padding: 5% 10% 5%;
     text-align: center;
@@ -139,27 +141,54 @@ h2 {
     margin-bottom: 5%;
 }
 
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
 
 #cta {
     background-color: #ff4c68;
     text-align: center;
+}
+.cta-heading {
+    font-size: 1.5rem;
 }
 
 .cta-content {
     padding: 60px 15% 30px;
     color: #fff;
     line-height: 1.5;
-
 }
 
 #footer {
     text-align: center;
-
 }
+
 .link-icon {
     margin: 2% 1%;
 }
 
 .link-icon:hover {
     color: #ff4c68;
+}
+
+@media (max-width: 1028px) {
+    .big-heading {
+        font-size: 2rem;
+    }
+    .testimonial-text, .section-heading, .price-text {
+        font-size: 1.5rem;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .iphone-img {
+        position: static;
+        transform: rotate(0);
+        margin: auto;
+    }
+
+    #title {
+        text-align: center;
+    }
 }
