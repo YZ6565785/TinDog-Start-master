@@ -5,7 +5,7 @@
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 5%;
 }
 
 /* navbar brand */
@@ -41,18 +41,28 @@ h1 {
 /* download button */
 
 .download-btn {
-    margin: 3% 3%;
+    margin: 3% 3% 30px;
 }
 
 
 /* iphone image */
 .iphone-img {
+    position: absolute;
+    right: 30%;
     width: 60%;
     transform: rotate(25deg);
-    margin: 10% 25%;
 }
 
-
+@media (max-width: 1028px) {
+    .iphone-img {
+        position: static;
+        transform: rotate(0);
+        margin: auto;
+    }
+    #title {
+        text-align: center;
+    }
+}
 
 
 /* feature icon */
@@ -67,11 +77,14 @@ h1 {
 /* feature */
 #features {
     text-align: center;
-    padding: 5% 10%;
+    padding: 7% 10%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 h3 {
-    font-family: 'Montserrat-bold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -79,4 +92,74 @@ h3 {
     color: #8f8f8f;
     width: 50%;
     margin: 0 auto 30px;
+}
+
+/* testimonials */
+#testimonials {
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+.carousel-item {
+    padding: 7% 15%;
+
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+
+}
+
+
+.testimonial-img {
+    width: 10%;
+    border-radius: 50%;
+    margin: 16px;
+}
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+
+}
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+
+#pricing {
+    padding: 5% 10% 5%;
+    text-align: center;
+}
+
+.pricing-col {
+    padding: 5% auto;
+    margin-bottom: 5%;
+}
+
+
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+}
+
+.cta-content {
+    padding: 60px 15% 30px;
+    color: #fff;
+    line-height: 1.5;
+
+}
+
+#footer {
+    text-align: center;
+
+}
+.link-icon {
+    margin: 2% 1%;
+}
+
+.link-icon:hover {
+    color: #ff4c68;
 }
